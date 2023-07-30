@@ -1,0 +1,23 @@
+.summary {
+    padding: 30px 10px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #ffe0b3;
+    height: 100vh;
+}
+.summary h2,
+.summary ul {
+    padding-bottom: 50px;
+}
+.summary ul {
+    list-style: none;
+    text-align: left;
+}
+.summary ul li {
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+.summary ul li:last-child {
+    padding-bottom: 0;
+}
