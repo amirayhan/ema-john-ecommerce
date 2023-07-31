@@ -19,9 +19,9 @@ const Cart = ({ cart }) => {
                 <li>Selected Items: {cart.length}</li>
                 <li>Total Price: ${total}</li>
                 <li>Total Shipping Charge: ${shipping}</li>
-                <li>Tax: ${tax} </li>
+                <li>Tax: ${tax.toFixed(2)} </li>
             </ul>
-            <h3>Grand Total: ${grandTotal} </h3>
+            <h3>Grand Total: ${grandTotal.toFixed(2)} </h3>
             <button className="btn btn-danger w-100 mt-5">Clear Cart</button>
             <button className="btn btn-primary w-100 mt-2">Review Order</button>
         </div>
