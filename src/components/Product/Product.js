@@ -6,7 +6,7 @@ const Product = (props) => {
     const { img, name, price, seller, ratings } = props.product;
     const AddProductToCart = props.AddProductToCart;
     return (
-        <div className="col-lg-4">
+        <div className="col-lg-4 col-md-6">
             <Card className="product mb-3" style={{ width: "18rem" }}>
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
