@@ -45,6 +45,7 @@ const Shop = () => {
                     </div>
                     <div className="col-lg-3">
                         <Cart cart={cart}></Cart>
+                        {/* kal friday, InshaAllah All Kaj Compelete Korbo.... */}
                     </div>
                 </div>
             </div>
