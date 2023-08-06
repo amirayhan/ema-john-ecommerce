@@ -16,13 +16,16 @@ const Shop = () => {
     }, []);
     useEffect(() => {
         const storedCart = getShoppingCart();
+        const savedCart = [];
         for (const id in storedCart) {
             const addedProduct = products.find((product) => product.id === id);
-            //  add quantity
-            const quantity = storedCart[id];
-            addedProduct.quantity = quantity;
-            console.log(addedProduct);
+            if (addedProduct) {
+                const quantity = storedCart[id];
+                addedProduct.quantity = quantity;
+                savedCart.push(addedProduct);
+            }
         }
+        setCart(savedCart);
     }, [products]);
 
     const AddProductToCart = (product) => {
@@ -44,8 +47,7 @@ const Shop = () => {
                         </div>
                     </div>
                     <div className="col-lg-3">
-                        {/* <Cart cart={cart}></Cart> */}
-                        {/* kal friday, InshaAllah All Kaj Compelete Korbo.... */}
+                        <Cart cart={cart}></Cart>
                     </div>
                 </div>
             </div>
